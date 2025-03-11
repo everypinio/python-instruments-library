@@ -11,6 +11,7 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   site: "https://everypinio.github.io/",
+  base: "python-instruments-library",
   outDir: 'public',
   publicDir: 'static',
   integrations: [
