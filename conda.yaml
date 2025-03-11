@@ -1,0 +1,6 @@
+name: instruments-doc
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - nodejs=20
