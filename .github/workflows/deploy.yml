@@ -24,10 +24,12 @@ jobs:
         run: npm install
       - name: Build the project
         run: npm run build
+      - name: Create .nojekyll file
+        run: touch public/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public  # Убедитесь, что это правильный путь к собранным файлам
+          path: ./public
   deploy:
     needs: build
     runs-on: ubuntu-latest
