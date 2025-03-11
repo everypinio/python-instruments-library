@@ -12,7 +12,7 @@ export default function InstrumentThumbnail({
 }: InstrumentThumbnailProps) {
   return (
     <div className="p-4">
-      <a href={`/instruments-database/${path}/`}>
+      <a href={`/python-instruments-library/${path}/`}>
         <img
           className="mr-3 !h-52 w-48 object-scale-down"
           alt={label}
