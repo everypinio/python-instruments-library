@@ -11,7 +11,7 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   site: "https://everypinio.github.io/",
-  base: "/python-instruments-library/",
+  base: "/python-instruments-library",
   outDir: 'public',
   publicDir: 'static',
   integrations: [
@@ -91,7 +91,6 @@ export default defineConfig({
   },
   vite: {
     resolve: {
-      // Very import alias to make @blocks work for rollup
       alias: {
         "@root": path.resolve("../"),
         "@": path.resolve("../src/"),
